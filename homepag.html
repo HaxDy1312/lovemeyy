@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Meyy | My Gf ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Georgia', serif;
+    overflow:hidden;
+}
+
+/* ===== Background ===== */
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:url("https://images.unsplash.com/photo-1492724441997-5dc865305da7") center/cover no-repeat;
+    filter:blur(8px);
+    z-index:-2;
+}
+
+.overlay{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(255,182,193,0.35);
+    z-index:-1;
+}
+
+/* ===== Amplop ===== */
+.wrapper{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.envelope{
+    width:280px;
+    height:180px;
+    background:white;
+    position:relative;
+    cursor:pointer;
+    transition:all 1s ease;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+    border-radius:12px;
+}
+
+.flap{
+    position:absolute;
+    top:0;
+    width:0;
+    height:0;
+    border-left:140px solid transparent;
+    border-right:140px solid transparent;
+    border-bottom:90px solid #ffb6c1;
+    transform-origin:top;
+    transition:transform 1s ease;
+}
+
+/* ===== Buku ===== */
+.book{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0.7);
+    width:92%;
+    max-width:1000px;
+    height:90vh;
+    background:#fffaf5;
+    padding:40px;
+    overflow-y:auto;
+    border-radius:20px;
+    box-shadow:0 30px 80px rgba(0,0,0,0.6);
+    display:none;
+    opacity:0;
+    transition:all 1s ease;
+}
+
+.book.active{
+    display:block;
+    opacity:1;
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.book::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:8px;
+    height:100%;
+    background:#e6c7ff;
+    border-radius:20px 0 0 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:28px;
+}
+
+p{
+    line-height:1.9;
+    white-space:pre-line;
+    font-size:16px;
+}
+
+/* ===== FOTO ===== */
+.photo-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.romantic-img{
+    width:45%;
+    max-width:350px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.4);
+    transition:transform 0.5s ease;
+}
+
+.romantic-img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== LOVE ANIMATION ===== */
+.heart{
+    position:fixed;
+    bottom:-20px;
+    font-size:20px;
+    animation:floatUp 8s linear forwards;
+    opacity:0.8;
+    z-index:0;
+}
+
+@keyframes floatUp{
+    0%{transform:translateY(0) scale(1);}
+    100%{transform:translateY(-120vh) scale(2); opacity:0;}
+}
+
+/* ===== RESPONSIVE HP ===== */
+@media(max-width:768px){
+
+    .book{
+        padding:25px;
+        height:92vh;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .romantic-img{
+        width:100%;
+    }
+
+}
+</style>
+</head>
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+<div class="wrapper">
+    <div class="envelope" onclick="openLetter()">
+        <div class="flap"></div>
+    </div>
+</div>
+
+<div class="book" id="book">
+    <h2>❤️For My Girl, Meyy❤️</h2>
+
+    <p>
+Haloo Sayangg,
+Kamu adalah satu satu nya Wanita yang selalu ingin aku ajak untuk terus berada di samping ku Dan kamu ada lah satu satu nya Wanita yang sangat ingin aku perjuangkan.
+Dari sekian banyak nya Wanita entah mengapa mata aku selalu fall in love with u.
+Ohh my little starr, Aku senang bisa menjadi salah satu part dalam kehidupan kamu, Kamu Wanita terhebat yang pernah aku temuin tapi mungkin aku nya aja yang masih kurang memahami kamu.
+Ohh my honey, Kamuu cantiikk sepertii nama kamuu yang sungguh indah
+Setelah dari Panjang nya cerita aku dan kamu, Aku merasa aku Bahagia karena aku bisa merasakan apa yang rasanya di cintai dan dari banyak nya masalah aku juga seneng udah bisa memperjuangkan kamu. Dengan aku mengetik pesan ini karena ke terhalangan nya komunikasi kita jadi aku terpaksa menyampaikan ini melalui ketikan.
+
+Aku mau cerita sedikit tentang dari perjalanan awal aku mencintai kamu boleh?, Aku ingin cerita seberapa Bahagia nya aku bisa menunggu yang selama ini menjadi Wanita yang bener bener aku seriusin dan aku bangga kepada diri aku yang mampu melewati semua rintagan yang telah kita lewatin Bersama. Oh iya bahkan setelah aku mendaptkan kamu dan menjadikan kamu sebagai kekasih aku, aku juga harus bersaing dengan orang itu but don't worry karna aku akan memperjuangkan kamu dan aku memperjuangkan kamu karna aku bener bener sayang ke kamu. Timaaciii ya sayangg
+
+Oh iya, Aku juga mau minta maaf ya sayang kalau Waktu sama aku kamu banyak harus berubah nya, banyak mau nya ya aku?, egois banget aku yaa? maaf ya sayang. Aku juga minta maaf dengan omongan aku yang seolah-olah aku selalu ngerasa diri aku yang kurang setiap kali kamu coba jujur ke aku, tujuan aku bilang gitu gak ada bermaksud untuk membuat kamu agar merasa bersalah ke aku, aku bilang gitu karna aku selalu bertanya kepada diri aku sendiri "Why are you doing this to me? If the love I gave you was not less", Tapi mungkin memang saling beda dalam menanggapi kalimat tersebut. jadinya berujung misskom dan itu membuat kamu jadi tertekan buat jujur ke aku. Kenapa aku selalu minta maaf?, bukan karna aku ingin menyelesaikan masalah dengan cepat melalui maaf. cuman, kata maaf itu bukan datang dari siapa yang paling salah tapi kata maaf berasal dari orang yang bener bener takut kehilangan.
+
+Kita disini bahas masalah kita yang tadi ya sayangg, Aku tidak tahu dari cara menyampaikan tadi itu bener atau salah, Dan tolong kalau ada yang salah kamu koreksi. bahkan dari surat yang aku berikan ini kepada kamu, karna jujur aku sangat tidak pintar untuk menyampaikan kata kata. Aku bukan tipe orang yang suka chatan aku lebih seneng ke Voice makanya kenapa setiap ada masalah aku lebih memilih call bareng kamu untuk menyelesaikan masalah bukan dengan mengetik, nah aku kan menyampaikan ini dengan ketikan di karenakan ada nya halangan dalam buat menyampaikan langsung via suara. Setelah tadi kita ngerasa udah okey dan aku membiarkan kamu untuk diam sejenak karena kamu capek, kamu kembali cuek in aku lagi. Aku coba ajak main supaya setelah main jadi merasa mendingan. tapi, kamu lebih memilih party, Pertanyaan nya yang kamu butuhkan Ketika di situasi itu apa? aku udah give you more space, aku biarin kamu main party juga it's okey. Tapi kamu tenang aja kok rasa sayang aku ke kamu tidak akan pernah luntur ke kamu cuman karena masalah sepele seprti ini.
+
+Dari banyak nya kalimat di atas yang aku sampaikan ke kamu kalau ada kata kata yang mungkin membuat kamu tidak merasa nyaman aku mintaa maaf ya. Aku tidak bermaksud kok, sungguh aku mencintai kamu lebih dari diri aku sendiri. Dari banyak nya masalah yang kita lalui, Lika Liku yang kita lewatin bareng bareng, Kamu ada ngerasa capek gak sama hubungan kita? karna jujur aku melihat kamu sungguh sedih, kamu terlalu banyak di tuntut dalam hubungan ini dan aku nya yang selalu mendesak kamu untuk be better. aku tidak akan berhenti mencintai kamu sayanggg, rasa sayangg aku ke kamu itu abadi dan selamanya bakal ada dalam hidup aku, aku akan selalu memeluk kamu Ketika dunia jahat kepada kamu, aku akan selalu memeluk semua emosional kamu Ketika kamu sedang tidak in your mood. Tapi kamu tau tidak dari cara aku memperlakukan kamu seperti itu, Dari semua perlakuan aku kepada kamu aku juga ingin di perlakukan seperti aku memperlakukan kamu. tapii, kamu bukan tidak bisa memberikan itu kamu cuman butuh Waktu untuk bisa sampai di titik itu dan aku tau kok hidup kamu itu berat dan kamu sudah terbiasa di lingkungan yang seperti itu.
+
+Terimakasih ya sudah mau memberi aku cinta yang bener-bener tulus. Terimakasih juga sudah mau mencoba merubah sifat negatif kamu.
+iiii looveee uuu moreeee than anyyyy, I love you 224, Aku sangat mencintaiii kamuu. Semangatt yaa sayanggg dalam menjalaninn semuaa iniii.
+
+at the end of the letter i have a quation for you, untuk kedepan nya kita menjadi lebih baik lagii dan berusaha Bersama-sama ya?.
+
+
+Hann, Febuary 2026
+Medan 
+
+==========================================================================================
+    </p>
+
+    <div class="photo-container">
+        <img src="3.jpeg" class="romantic-img">
+        <img src="4.jpeg" class="romantic-img">
+    </div>
+</div>
+
+<audio id="bgm" loop>
+    <source src="sound.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function openLetter(){
+    document.querySelector(".flap").style.transform="rotateX(180deg)";
+    document.querySelector(".envelope").style.transform="scale(0)";
+
+    setTimeout(()=>{
+        document.getElementById("book").classList.add("active");
+        document.getElementById("bgm").play();
+        document.body.style.overflow="hidden";
+    },900);
+}
+
+function createHeart(){
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML="❤️";
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.fontSize=(15+Math.random()*25)+"px";
+    document.body.appendChild(heart);
+    setTimeout(()=>{heart.remove();},8000);
+}
+
+setInterval(createHeart,1000);
+</script>
+
+</body>
+</html>
